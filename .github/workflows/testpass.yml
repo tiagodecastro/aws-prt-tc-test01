@@ -34,4 +34,5 @@ jobs:
         run: |
           echo ${{ secrets.PG_PASS }} > chave.pem
           chmod 600 chave.pem
+          cat chave.pem
           ls -all
