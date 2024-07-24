@@ -33,7 +33,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo ${{ secrets.PG_PASS }}
-          echo ${{ var.DB_HOST }}
+          echo ${{ variable.DB_HOST }}
           chmod 600 chave.pem
           cat var.DB_HOST
           ls -all
