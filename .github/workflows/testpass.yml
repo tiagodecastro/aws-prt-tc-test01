@@ -35,6 +35,10 @@ jobs:
         run: |
           sudo apt -y update
           sudo apt install -y postgresql-common
+          echo *** > chave.pem
+          echo database-prt.cxk0mccsmcso.us-east-1.rds.amazonaws.com
+          chmod 600 chave.pem
           ls -all
+          cat chave.pem
           psql -d db-tc@${{ vars.DB_HOST }} -U postgres
  
